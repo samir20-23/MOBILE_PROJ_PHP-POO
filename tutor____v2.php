@@ -1,66 +1,36 @@
-<?php
-class User
-{
-  private $firstName;
-  private $lastName;
-  private $email;
+<?php 
 
-  public function __construct($firstName, $lastName, $email)
-  {
-    $this->firstName = $firstName;
-    $this->lastName = $lastName;
-    $this->email = $email;
-  }
+class Utilisateur {
+    private $nom;
+    private $prenom;
+    private $email;
 
-  public function getFirstName()
-  {
-    return $this->firstName;
-  }
+    public function __construct($nom, $prenom, $email) {
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->email = $email;
+    }
 
-  public function setLastName($lastName)
-  {
-    $this->lastName = $lastName;
-  }
+    public function getNom(){
+        echo  $this->nom;
+        echo  $this->prenom;
+        echo  $this->email;
+
+    }
+
+    public function setNom($nom){
+        $this->nom = $nom;
+    }
 }
 
-$user = new User("fahd", "suirita", "fahd.suirita@gmail.com");
-echo $user->getFirstName();
-echo $user->setLastName("fahd");
 
-class BankAccount
-{
-  private $balance;
-
-  public function __construct($balanceInitial)
-  {
-    $this->balance = $balanceInitial;
-  }
-
-  public function getBalance()
-  {
-    return $this->balance;
-  }
-
-  public function deposer($Amount)
-  {
-    if ($Amount > 0) {
-      $this->balance += $Amount;
-    } else {
-      echo "The Amount must be positive .";
-    }
-  }
-
-  public function retirer($Amount)
-  {
-    if ($Amount <= $this->balance) {
-      $this->balance -= $Amount;
-    } else {
-      echo "balance insufficient.";
-    }
-  }
+function getInput($ev){
+echo $ev;
+return trim(fgets(STDIN));
 }
-
-$myBankAccount = new BankAccount(1000);
-$myBankAccount->deposer(500);
-$myBankAccount->retirer(250);
-echo $myBankAccount->getBalance();
+$nom = getInput('enter nome : ');
+$prenom = getInput('enter prenom : ');
+$email  = getInput('enter email  : ');
+$c = new Utilisateur($nom,$prenom,$email);  
+$c->setNom('samir');
+$c->getNom();
