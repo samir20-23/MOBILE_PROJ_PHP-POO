@@ -1,25 +1,24 @@
 <?php 
 
-class FavoriteCar{
-     public $name ;
-     public $model;
-     public $style;
-public function __construct($name,$model,$style){
-$this->name = $name;
-$this->model = $model;
-$this->style = $style;
-}
-public function __destruct(){
-     echo "my favorite car is {$this->name} model {$this->model} and style or type {$this->style}";
-}
+class DataLogIn{
+    public $name ;
+    public $email ;
+    public $password;
+    public function getData(){
+      echo "hello {$this->name} your email {$this->email} your password: [{$this->password}]";
+    }
 }
 function getInput($ev){
-     echo $ev ;
-     return trim(fgets(STDIN));
+echo $ev;
+return trim(fgets(STDIN));
 }
- $choice = getInput("Enter NAME car: ");
- $model = getInput("Enter MODEL car: ");
- $style = getInput("Enter TYPE car: ");
+$name = getInput("enter your NAME : ");
+$email = getInput("enter your email : ");
+$password = getInput("enter your password : ");
 
-$car = new FavoriteCar($choice,$model,$style);
- 
+$DataLogIn = new DataLogIn();
+$DataLogIn->name = $name;
+$DataLogIn->email = $email;
+$DataLogIn->password = $m;
+$DataLogIn->getData();
+
