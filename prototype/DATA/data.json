@@ -1,0 +1,51 @@
+[
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "999999999999",
+        "title": "dddddd",
+        "author": "ddddd",
+        "publication_date": "dddd",
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "444",
+        "title": "asa",
+        "author": "as",
+        "publication_date": "as",
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "44",
+        "title": "dfasdf",
+        "author": "asdf",
+        "publication_date": "asdf",
+        "availability": true
+    }
+]
