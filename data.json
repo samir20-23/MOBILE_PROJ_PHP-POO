@@ -1,1 +1,11 @@
 
+{
+    "titre": "BookTitle",
+    "isbn": "isbnnnn",
+    "auteurs": [
+        {
+            "nom": "samir",
+            "prenom": "otako"
+        }
+    ]
+}
