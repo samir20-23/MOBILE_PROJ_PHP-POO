@@ -28,9 +28,9 @@ $livre1 = new Livre("Le Petit Prince", "9782266000016", [$auteur1]);
 
  
 $json = json_encode($livre1, JSON_PRETTY_PRINT);
-file_put_contents('ma_bibliotheque.json', $json);
+file_put_contents('data.json', $json);
  
-$json = file_get_contents('ma_bibliotheque.json');
+$json = file_get_contents('data.json');
 $livreLu = json_decode($json);
 
  
