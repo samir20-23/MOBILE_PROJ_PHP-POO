@@ -2,6 +2,7 @@
 echo 'hello';
 
 
+<<<<<<< HEAD
 //                       method number 1
 // Write in terminal
 // cd /path/to/your/file
@@ -67,3 +68,10 @@ echo 'hello';
 // ################
 // ipconfig in hhttpd.conf
 //sername  192.168.2.38
+=======
+//write in  terminal
+//cd /you_file/file.php
+//php -S localhost:8000
+//go to web write http://localhost:8000/youfile.php
+
+>>>>>>> a66b5cb417aa114eb7d4b3d7a33e8eb4f106428b
