@@ -1,9 +1,9 @@
 <?php
-
+$fileJson = 'data.json';
 class Livre {
     public $titre;
     public $isbn;
-    public $auteurs; // Un tableau d'objets Auteur
+    public $auteurs;  
 }
 
 class Auteur {
@@ -16,28 +16,29 @@ class Auteur {
     }
 }
 
-// Créer un objet Livre
+ 
 $c = new Livre();
 $c->titre = 'samir';
 $c->isbn = 'aoulad amar';
-$c->auteurs = [ new Auteur('h1', 'h2') ]; // Utiliser une liste d'auteurs
-
-// Convertir l'objet en JSON et afficher
+$c->auteurs = [ new Auteur('h1', 'h2') ]; 
 $json = json_encode($c, JSON_PRETTY_PRINT);
 echo $json;
 
-// Lire un objet Livre depuis un fichier JSON
-$jsonData = file_get_contents('data.json');
-$livreLu = json_decode($jsonData);
-echo $livreLu->titre; // Afficher le titre lu depuis le fichier
+ if(file_exists($fileJson)){
 
-// Fonction pour enregistrer un objet Livre dans un fichier JSON
+
+$jsonData = file_get_contents($fileJson);
+$livreLu = json_decode($jsonData);
+echo $livreLu->titre; 
+ }else{
+    echo 'error the file json  dont exists ';
+ }
+ 
 function enregistrerLivreDansFichier(Livre $livre, string $fichier) {
     $json = json_encode($livre, JSON_PRETTY_PRINT);
     file_put_contents($fichier, $json);
 }
-
-// Fonction pour lire un objet Livre depuis un fichier JSON
+ 
 function lireLivreDepuisFichier(string $fichier) : Livre {
     $json = file_get_contents($fichier);
     return json_decode($json);
