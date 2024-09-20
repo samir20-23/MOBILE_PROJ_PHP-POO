@@ -1,37 +1,69 @@
 <?php
+echo 'hello';
 
-class Livre {
-    public $titre;
-    public $isbn;
-    public $auteurs;  
 
-    public function __construct($titre, $isbn, $auteurs) {
-        $this->titre = $titre;
-        $this->isbn = $isbn;
-        $this->auteurs = $auteurs;
-    }
-}
+//                       method number 1
+// Write in terminal
+// cd /path/to/your/file
+// php -S localhost:8000
+// Go to web and write http://localhost:8000/yourfile.php
 
-class Auteur {
-    public $nom;
-    public $prenom;
+//                       method number 2
+// Install XAMPP
+// Start Apache in XAMPP
+// Drag your file.php into htdocs
+// Go to web and write http://localhost/yourfile.php
 
-    public function __construct($nom, $prenom) {
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-    }
-}
+//                       method number 3
+// Install Nginx
+// Open Command Prompt and navigate to Nginx folder
+// Start Nginx with 'start nginx'
+// Configure nginx.conf to work with PHP-FPM
+// Go to web and write http://localhost:80/yourfile.php
 
- 
-$auteur1 = new Auteur("Saint-Exupéry", "Antoine de");
-$livre1 = new Livre("Le Petit Prince", "9782266000016", [$auteur1]);
+//                       method number 4
+// Install Docker
+// Run the following command:
+// docker run -d -p 8000:80 -v /path/to/your/php/files:/var/www/html php:7.4-apache
+// Go to web and write http://localhost:8000
 
- 
-$json = json_encode($livre1, JSON_PRETTY_PRINT);
-file_put_contents('data.json', $json);
- 
-$json = file_get_contents('data.json');
-$livreLu = json_decode($json);
+//                       method number 5
+// Use a cloud platform like Heroku
+// Install Heroku CLI
+// Create a new project using Git
+// Push your code to Heroku with 'git push heroku master'
+// Access your application via the provided URL
 
- 
-echo $livreLu->titre;  
+
+
+
+//                      method number 6: Install Apache Manually
+// Download Apache from Apache Lounge: https://www.apachelounge.com/download/
+// Extract the downloaded zip file to C:\Apache24 (for example)
+// Open Command Prompt as Administrator
+// Navigate to Apache's `bin` directory:
+// cd C:\Apache24\bin
+// Install Apache as a service with the following command:  httpd -k install
+// Start the Apache service with:  httpd -k start
+// Open a web browser and write http://localhost/
+// You should see the Apache welcome page
+
+//                       method number 2: Configure PHP with Apache
+// Download PHP from the official PHP site: https://windows.php.net/download/
+// Extract PHP to C:\php (for example)
+// Open Apache's configuration file httpd.conf located in C:\Apache24\conf
+// Add the following lines at the end of the file:
+// LoadModule php_module "C:/php/php7apache2_4.dll"
+// AddType application/x-httpd-php .php
+// PHPIniDir "C:/php"
+// Restart Apache with:
+// httpd -k restart
+// Now place your PHP files in C:\Apache24\htdocs
+// Access your PHP files via http://localhost/yourfile.php
+
+
+
+
+// ################
+// ipconfig in hhttpd.conf
+//sername  192.168.2.38
