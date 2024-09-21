@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "ISBN": "8989898",
         "title": "samir",
         "author": "damir",
@@ -11,6 +12,54 @@
         "title": "ad",
         "author": "sd",
         "publication_date": "ds",
+=======
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "999999999999",
+        "title": "dddddd",
+        "author": "ddddd",
+        "publication_date": "dddd",
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "444",
+        "title": "asa",
+        "author": "as",
+        "publication_date": "as",
+        "availability": true
+    },
+    {
+        "ISBN": null,
+        "title": null,
+        "author": null,
+        "publication_date": null,
+        "availability": true
+    },
+    {
+        "ISBN": "44",
+        "title": "dfasdf",
+        "author": "asdf",
+        "publication_date": "asdf",
+>>>>>>> f9408813670e5286ae1206bd757c95bd74d5b8e2
         "availability": true
     }
 ]
