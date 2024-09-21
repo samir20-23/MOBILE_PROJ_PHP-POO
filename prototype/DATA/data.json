@@ -1,0 +1,16 @@
+[
+    {
+        "ISBN": "8989898",
+        "title": "samir",
+        "author": "damir",
+        "publication_date": "samir",
+        "availability": true
+    },
+    {
+        "ISBN": "009",
+        "title": "ad",
+        "author": "sd",
+        "publication_date": "ds",
+        "availability": true
+    }
+]
