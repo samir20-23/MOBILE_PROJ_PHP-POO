@@ -16,8 +16,9 @@ public function Start(){
                    echo 'Title: ' . ($book['title'] ?? 'N/A') . PHP_EOL;
                    echo 'Author: ' . ($book['author'] ?? 'N/A') . PHP_EOL;
                    echo 'Publication Date: ' . ($book['publication_date'] ?? 'N/A') . PHP_EOL;
-                   echo 'Availability: ' . ($book['availability'] ? 'Available' : 'Not Available') . PHP_EOL;
-                   echo '------------------------' . PHP_EOL;
+                   echo 'Availability: ' . ($book['availability'] ? 'Available' : 'Not Available') . PHP_EOL; 
+                   echo "\033[1;31m" . str_pad('------------------------', 50, ' ', STR_PAD_BOTH) . "\033[0m" . PHP_EOL;
+   
                }
            }
      }

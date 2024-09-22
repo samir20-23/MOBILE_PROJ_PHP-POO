@@ -47,5 +47,12 @@
         "author": "as",
         "publication_date": "as",
         "availability": true
+    },
+    {
+        "ISBN": "oooooooooooooooooo",
+        "title": "dddddddddddd",
+        "author": "ddddddddd",
+        "publication_date": "dddddddd",
+        "availability": true
     }
 ]
