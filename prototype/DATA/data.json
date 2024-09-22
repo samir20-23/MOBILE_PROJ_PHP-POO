@@ -1,65 +1,51 @@
 [
     {
-<<<<<<< HEAD
-        "ISBN": "8989898",
-        "title": "samir",
-        "author": "damir",
-        "publication_date": "samir",
+        "ISBN": "978-3-16-148410-0",
+        "title": "Learning PHP",
+        "author": "John Doe",
+        "publication_date": "2023-09-20",
         "availability": true
     },
     {
-        "ISBN": "009",
-        "title": "ad",
-        "author": "sd",
-        "publication_date": "ds",
-=======
-        "ISBN": null,
-        "title": null,
-        "author": null,
-        "publication_date": null,
+        "ISBN": "0---89879878-",
+        "title": "sdfsdf",
+        "author": "sdfsdf",
+        "publication_date": "sdf",
         "availability": true
     },
     {
-        "ISBN": null,
-        "title": null,
-        "author": null,
-        "publication_date": null,
+        "ISBN": "asd",
+        "title": "sdfs",
+        "author": "sdf",
+        "publication_date": "sdf",
         "availability": true
     },
     {
-        "ISBN": "999999999999",
-        "title": "dddddd",
-        "author": "ddddd",
-        "publication_date": "dddd",
+        "ISBN": "ttttt",
+        "title": "t",
+        "author": "t",
+        "publication_date": "t",
         "availability": true
     },
     {
-        "ISBN": null,
-        "title": null,
-        "author": null,
-        "publication_date": null,
+        "ISBN": "fa",
+        "title": "fafa",
+        "author": "fafafa",
+        "publication_date": "fafafafafa",
         "availability": true
     },
     {
-        "ISBN": "444",
-        "title": "asa",
+        "ISBN": "as",
+        "title": "as",
+        "author": "as",
+        "publication_date": "a",
+        "availability": true
+    },
+    {
+        "ISBN": "00",
+        "title": "as",
         "author": "as",
         "publication_date": "as",
-        "availability": true
-    },
-    {
-        "ISBN": null,
-        "title": null,
-        "author": null,
-        "publication_date": null,
-        "availability": true
-    },
-    {
-        "ISBN": "44",
-        "title": "dfasdf",
-        "author": "asdf",
-        "publication_date": "asdf",
->>>>>>> f9408813670e5286ae1206bd757c95bd74d5b8e2
         "availability": true
     }
 ]
