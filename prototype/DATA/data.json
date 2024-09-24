@@ -54,5 +54,19 @@
         "author": "ddddddddd",
         "publication_date": "dddddddd",
         "availability": true
+    },
+    {
+        "ISBN": "121212",
+        "title": "samir",
+        "author": "samir",
+        "publication_date": "samir",
+        "availability": true
+    },
+    {
+        "ISBN": "498573945",
+        "title": "samir",
+        "author": "dsamit",
+        "publication_date": "948579345",
+        "availability": true
     }
 ]

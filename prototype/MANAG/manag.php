@@ -9,12 +9,12 @@ class Manager{
      public $id;
  
      public function __construct($option, $ISBN, $title, $author, $date, $id){
-         $this->option = $option;
+        $this->option = $option;
          $this->ISBN = $ISBN;
          $this->title = $title;
          $this->author = $author;
          $this->date = $date;
-         $this->id = $id;
+         $this->id = $id; 
      }
      public function LOGO(){
     
