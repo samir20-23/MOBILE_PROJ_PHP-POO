@@ -1,30 +1,27 @@
-<?php  
+<?php 
 
-class Database{
-    public  $book = [];
-    public $pathText = 'DB/DataBase.txt';
+class DataBase{
+  public $array = [];
+  public $path = '../DB/Database.text';
+  public function __construct()
+  {
+    $this->getDataTxt();
+  }
 
-    public function __construct(){
-         $this->getData();
-    }
-
-    private function  getData(){
-     if(file_exists($this->pathText)){
-       $content = file_get_contents($this->pathText); 
-       $data = unserialize($content);
-       $this->book = $data->books; 
-     }
-    }
-
-    private function setData(){
-     $data = serialize($this);
-     file_put_contents($this->pathText,$data);
-    }
-
-    public function saveData(){
-      $this->setData();
-    }
+  private function getDataTxt(){
+if(file_exists($this->path)){
+$data = file_get_contents($this->path);
+$realData= unserialize($data);
+$this->array=$realData;
+}
+  }
+  private function setDataTxt(){
+    $data = serialize($this->array);
+    $data = file_put_contents($this->path,$data);
+  }
+  public function save(){
+    $this->setDataTxt();
+  }
 
 }
-
 ?>
