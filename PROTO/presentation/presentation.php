@@ -9,7 +9,7 @@ class Presentation {
  foreach($data as  $dk){
         echo "ISBN: " . $dk->getISBN() . "\n";
         echo "Title: " . $dk->getTitle() . "\n";
-        echo "auther: " . $dk->getAuther() . "\n";
+        // echo "auther: " . $dk->getAuther() . "\n";
       }
       }else{
         echo "no view";
@@ -26,12 +26,12 @@ class Presentation {
 return;
      }
      
-     $auther = ask("enter auther or 'back' ");
-     if($auther == "back"){
-return ;
-     }  
+//      $auther = ask("enter auther or 'back' ");
+//      if($auther == "back"){
+// return ;
+//      }  
      
-     $book = new book($ISBN,$title,$auther);
+     $book = new book($ISBN,$title);
      $ser = new DataAccess();
      $ser->setBook($book);
     echo 'Book added successfully';

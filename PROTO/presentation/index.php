@@ -1,11 +1,11 @@
 <?php 
-require('../presentation.php');
-class  Start{
-public function ask($ev){
+require('./presentation.php'); 
+
+ function ask($ev){
 echo $ev ; 
 return trim(fgets(STDIN));
 }
-public function start(){
+ function start(){
 
     echo "|        Books Management            |\n";
     echo "|------------------------------------|\n";
@@ -36,7 +36,7 @@ public function start(){
         break;
     }
 }
+
 }
-}
-stat();
+start();
 ?>

@@ -4,13 +4,13 @@ class book{
     private $id;
     private $ISBN;
     private $title;
-    public  $auther;
+    // public  $auther;
 
-    public function __construct($id,$ISBN,$title,$auther){
+    public function __construct($ISBN,$title){
         $this->id = time();
         $this->ISBN = $ISBN ;
         $this->title = $title;
-        $this->auther - $auther;
+        // $this->auther - $auther;
     }
     public function  getId(){
         return $this->id;
@@ -33,12 +33,12 @@ $this->ISBN = $ISBN;
   $this->title = $title;
     }
 
-    public function getAuther(){
-        return $this->auther;
-    }
-    public function setAuther ($auther){
-    $this->auther = $auther;
-    }
+    // public function getAuther(){
+    //     return $this->auther;
+    // }
+    // public function setAuther ($auther){
+    // $this->auther = $auther;
+    // }
     }
 
 
