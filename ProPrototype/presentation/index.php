@@ -9,32 +9,34 @@ function ask($ask)
 
 function start()
 {
-    function LOGO(){
-    
+    function LOGO()
+    {
+
         $colors = [
-            "\033[0;31m", 
-            "\033[0;32m", 
-            "\033[0;33m", 
-            "\033[0;34m", 
-            "\033[0;35m", 
-            "\033[0;36m", 
-            "\033[1;31m", 
-            "\033[1;32m", 
-            "\033[1;33m", 
-            "\033[1;34m", 
-            "\033[1;35m", 
-            "\033[1;36m", 
+            "\033[0;31m",
+            "\033[0;32m",
+            "\033[0;33m",
+            "\033[0;34m",
+            "\033[0;35m",
+            "\033[0;36m",
+            "\033[1;31m",
+            "\033[1;32m",
+            "\033[1;33m",
+            "\033[1;34m",
+            "\033[1;35m",
+            "\033[1;36m",
         ];
-        
-        
+
+
         $reset = "\033[0m";
-        
-        function getRandomColor($colors) {
+
+        function getRandomColor($colors)
+        {
             return $colors[array_rand($colors)];
         }
-        
+
         $textColor = getRandomColor($colors);
-        
+
         $word = "
                 ===========================================================================================
                   AAA     PPPPP     PPPPP    L       III     CCC     AAA    TTTTT    III     OOO     N    N
@@ -44,22 +46,23 @@ function start()
                  A   A    P         P        LLLLL   III     CCC    A   A     T      III     OOO     N    N
                  ==========================================================================================
         ";
-        
+
         echo $textColor  . $word . $reset;
-     
-     }
-     LOGO();
-     $ax = false;
+    }
+    LOGO();
+    $ax = false;
     while (!$ax) {
 
-        
- 
-         
-         echo "++++++++++++++++++++++++++++++++++++++++\n";
-         echo "enter [a]  [add book]"."\n";
-    echo "enter [v] [view books]"."\n";
-    echo "enter [ex] [closs application]"."\n";
-    echo "++++++++++++++++++++++++++++++++++++++++\n";
+
+
+
+        echo "++++++++++++++++++++++++++++++++++++++++\n";
+        echo "enter [a]  [add book]" . "\n";
+        echo "enter [v] [view books]" . "\n";
+        echo "enter [d] [delete text]" . "\n";
+        echo "enter [ex] [closs application]" . "\n";
+
+        echo "++++++++++++++++++++++++++++++++++++++++\n";
 
 
         $question = ask('write  : ');
@@ -72,14 +75,19 @@ function start()
                 $view = new Presentation();
                 $view->add();
                 break;
-              case 'exit':
-    $ax = true;
-    break;
+            case 'd':
 
-  default:
-    echo "error switch .\n";
-    break;
-            
+                $iddelete = ask('enter id delete : ');
+                $view = new Presentation();
+                $view->delete($iddelete);
+                break;
+            case 'exit':
+                $ax = true;
+                break;
+
+            default:
+                echo "error switch .\n";
+                break;
         }
     }
 }
