@@ -21,6 +21,24 @@ return;
 $classDAO = new DataDAO;   
  $classDAO->setData($classData);
 
+   
+$animation = [
+  "🔄 Connecting...",
+  "✅ Connected Successfully!",
+  "🎉 Operation Completed!",
+  "⚙️ Processing...",
+];
+
+$screenWidth = 80;
+$color = "\033[0;32m";
+
+foreach ($animation as $message) {
+  echo $color . str_pad($message, $screenWidth, ' ', STR_PAD_BOTH) . "\033[0m\n";
+  usleep(500000);
+}
+
+echo $color . str_pad("✨ Thank you for using our application! ✨", $screenWidth, ' ', STR_PAD_BOTH) . "\033[0m\n";
+
   }
 }
 
