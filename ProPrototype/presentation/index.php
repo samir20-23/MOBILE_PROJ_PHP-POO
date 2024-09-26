@@ -78,8 +78,8 @@ function start()
             case 'd':
 
                 $iddelete = ask('enter id delete : ');
-                $view = new Presentation();
-                $view->delete($iddelete);
+                // $view = new Presentation();
+                // $view->delete($iddelete);
                 break;
             case 'exit':
                 $ax = true;

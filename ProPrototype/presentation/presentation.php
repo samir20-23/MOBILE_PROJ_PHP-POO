@@ -34,7 +34,7 @@ class Presentation
       "⚙️ Processing..."
     ];
 
-    $screenWidth = 80;  ²
+    $screenWidth = 80;
     $color = "\033[0;32m";
 
     foreach ($animation as $message) {
@@ -43,10 +43,5 @@ class Presentation
     }
 
     echo $color . str_pad("✨ Thank you for using our application! ✨", $screenWidth, ' ', STR_PAD_BOTH) . "\033[0m\n";
-  }
-  public function delete($id)
-  {
-    $classDAO = new DataDAO;
-    $classDAO->delete($id);
   }
 }
